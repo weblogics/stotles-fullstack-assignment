@@ -1,4 +1,4 @@
-import { Button, Table } from "antd";
+import { Table } from "antd";
 import { ColumnType } from "antd/lib/table";
 import React from "react";
 import { ProcurementRecord } from "./Api";

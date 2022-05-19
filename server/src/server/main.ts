@@ -12,6 +12,11 @@ import { ProcurementRecord } from "./db/ProcurementRecord";
 /**
  * This file has little structure and doesn't represent production quality code.
  * Feel free to refactor it or add comments on what could be improved.
+ *
+ * We specifically avoided any use of sequelize ORM features and used plain SQL
+ * queries and only the data mapping to get nice JavaScript objects from the DB.
+ *
+ * You can switch to using the ORM features or continue using SQL.
  */
 
 const sequelize = new Sequelize({
@@ -49,7 +54,7 @@ async function searchRecords({
     return await sequelize.query(
       "SELECT * FROM procurement_records WHERE title LIKE :textSearch",
       {
-        model: ProcurementRecord,
+        model: ProcurementRecord, // by setting this sequelize will return a list of ProcurementRecord objects
         replacements: {
           textSearch: `${textSearch}%`,
         },
