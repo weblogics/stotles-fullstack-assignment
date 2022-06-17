@@ -12,6 +12,7 @@ CREATE TABLE procurement_records (
   buyer_id UUID NOT NULL REFERENCES buyers(id),
   publish_date DATE NOT NULL,
   close_date DATE,
+  award_date DATE,
   value REAL,
   currency TEXT,
   created_at TIMESTAMPTZ NOT NULL

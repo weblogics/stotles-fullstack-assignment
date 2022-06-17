@@ -31,6 +31,10 @@ export class ProcurementRecord extends Model {
   close_date!: string | null;
 
   @AllowNull
+  @Column(DataType.STRING)
+  award_date!: string | null;
+
+  @AllowNull
   @Column(DataType.REAL)
   value!: number | null;
 
