@@ -23,7 +23,7 @@ The processed code will be available at http://localhost:3001
 To start the server:
 
 ```
-cd client
+cd server
 npm install
 npm run dev
 ```
