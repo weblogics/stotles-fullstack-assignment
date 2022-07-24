@@ -4,13 +4,18 @@ export type SearchRecordsRequest = {
 
 export type ProcurementRecord = {
   id: string;
+  stage: string;
   title: string;
   description: string;
   publishDate: string;
+  awardDate: string;
+  closeDate: string;
   buyer: {
     id: string;
     name: string;
   };
+  value: number;
+  currency: string;
 };
 
 export type SearchRecordsResponse = {

@@ -84,13 +84,18 @@ function serializeProcurementRecord(
 
   return {
     id: record.id,
+    stage: record.stage,
     title: record.title,
     description: record.description,
     publishDate: record.publish_date,
+    awardDate: record.award_date,
+    closeDate: record.close_date,
     buyer: {
       id: buyer.id,
       name: buyer.name,
     },
+    value: record.value,
+    currency: record.currency,
   };
 }
 
