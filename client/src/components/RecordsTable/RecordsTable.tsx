@@ -1,8 +1,11 @@
+import React from "react";
+
 import { Table } from "antd";
 import { ColumnType } from "antd/lib/table";
-import React from "react";
-import { ProcurementRecord } from "./Api";
-import ProcurementRecordPreviewModal from "./ProcurementRecordPreview";
+
+import ProcurementRecordPreviewModal from "@/components/ProcurementRecordPreview";
+
+import { ProcurementRecord } from "@/services/Api";
 
 type Props = {
   records: ProcurementRecord[];
@@ -43,7 +46,12 @@ function RecordsTable(props: Props) {
   }, []);
   return (
     <>
-      <Table columns={columns} dataSource={records} pagination={false} />
+      <Table
+        columns={columns}
+        dataSource={records}
+        pagination={false}
+        rowKey="id"
+      />
       <ProcurementRecordPreviewModal
         record={previewedRecord}
         onClose={() => setPreviewedRecord(undefined)}

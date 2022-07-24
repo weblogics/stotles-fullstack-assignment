@@ -1,7 +1,10 @@
 import React from "react";
-import Api, { ProcurementRecord } from "./Api";
-import RecordSearchFilters, { SearchFilters } from "./RecordSearchFilters";
-import RecordsTable from "./RecordsTable";
+
+import Api, { ProcurementRecord } from "@/services/Api";
+import RecordSearchFilters from "@/components/RecordSearchFilters";
+import RecordsTable from "@/components/RecordsTable";
+
+import { SearchFilters } from "@/types/shared/RecordSearchFilters.types";
 
 function RecordSearchPage() {
   const [searchFilters, setSearchFilters] = React.useState<SearchFilters>({
@@ -25,6 +28,7 @@ function RecordSearchPage() {
 
   return (
     <>
+      {/* SUGGESTION: Add loader for improved UX */}
       <RecordSearchFilters
         filters={searchFilters}
         onChange={setSearchFilters}
