@@ -22,7 +22,7 @@ function RecordSearchPage() {
         textSearch: searchFilters.query,
       });
 
-      setRecords(response.records);
+      setRecords(response.data);
     })();
   }, [searchFilters]);
 

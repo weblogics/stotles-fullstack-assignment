@@ -51,7 +51,7 @@ function RecordsTable(props: Props) {
       },
       {
         title: "Buyer name",
-        render: (record: ProcurementRecord) => record.buyer.name,
+        render: (record: ProcurementRecord) => record?.buyer?.name,
       },
     ];
   }, []);

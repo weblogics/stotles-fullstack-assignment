@@ -1,5 +1,6 @@
 export type RecordSearchRequest = {
   textSearch?: string;
+  buyerIds?: string[];
 };
 
 export type BuyerDto = {

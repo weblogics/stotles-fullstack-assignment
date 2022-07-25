@@ -19,6 +19,8 @@ export type ProcurementRecord = {
 };
 
 export type SearchRecordsResponse = {
+  data: ProcurementRecord[];
+  count: number;
   records: ProcurementRecord[];
 };
 
