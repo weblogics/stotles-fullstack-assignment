@@ -7,6 +7,7 @@ import { ProcurementRecordService } from "../services/ProcurementRecord.Service"
 
 const { Op } = sequelize;
 
+//  SUGGESTION: Given more time these would live in a more common types structure.
 export type GetRecordsFilters = {
   textSearch?: string;
   buyerIds?: string[];

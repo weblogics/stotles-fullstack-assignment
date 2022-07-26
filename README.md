@@ -1,5 +1,25 @@
 # Stotles work sample assignment
 
+## Steve Goodwin - Notes/Feedback
+
+### Frontend Client
+
+- Having reviewed the initial layout on this my approach was to adapt the structure into something more in-line with more common practices and maintainability.
+- I've added a few styling tweaks, but nothing major since this wasn't the given focus of the task, if we were to improve more in this area i'd suggest adopting a better way to manage styling. I've opted for CSS modules in the newer bits i've added as this is just something I prefer, but everyone has their preferences.
+- Other areas for improvements are around the native functionality of AntDesign, the UX when selecting multiple buyer filters is fine on the one hand as you should update filters, but on the other the dropdown should close. I did try to get this working, but it pushed me over my allotted time, if I were more familiar with AntD's quirks I may have not suffered a time deficit on this part.
+
+### Backend Server
+
+- Again restructured this based on structure and patterns i've used in the past, have I had more time then I would've focused on Error and Response types so that these could be used across the controllers for their responses for consistent objects to be returned to the FE client.
+- Having not done too much Sequelize before this was a refreshing task to see how I could abstract the database connection, had i'd had more time models could have been autoloaded and a proper application config of been added to house application wide config referencing process.env where required and allowing all configurable items to be centrally located.
+- I've not used Express for sometime so there maybe some better / newer ways of gaining more performance gains than the solution I arrived at.
+
+### Future Improvements
+
+- Given more time tests could've been added, both for UI and features using tools such as Cypress and Storybook for component level testing.
+- UX improvements would benefit a few places on the frontend to aid with user issues, i've added a small improvement to clear filters which at least highlights the buyer list isn't doing weird things when filtered.
+- Another improvement would be to sort the list alphabetically, although by using AntD this allows a textual filter on the list, this however may not be initially obvious to the user.
+
 ## Getting started
 
 This sample codebase consists of a separate client & server code.
