@@ -1,5 +1,6 @@
 export type SearchRecordsRequest = {
   textSearch?: string;
+  buyerIds?: string | string[];
 };
 
 export type ProcurementRecord = {

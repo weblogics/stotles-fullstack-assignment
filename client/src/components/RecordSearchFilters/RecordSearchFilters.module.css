@@ -1,0 +1,10 @@
+.searchFilters {
+  display: flex;
+  column-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.searchFilters .searchTextFilter,
+.searchFilters .searchBuyerFilter {
+  width: 100%;
+}

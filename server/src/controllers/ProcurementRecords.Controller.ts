@@ -28,7 +28,7 @@ class ProcurementRecordsController {
         filters.textSearch = requestPayload.textSearch;
       }
 
-      if (requestPayload.buyerIds) {
+      if (requestPayload.buyerIds && requestPayload.buyerIds.length > 0) {
         filters.buyerIds = requestPayload.buyerIds;
       }
 
