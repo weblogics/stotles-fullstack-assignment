@@ -2,7 +2,7 @@ import * as express from "express";
 import sequelize = require("sequelize");
 import { WhereOptions } from "sequelize";
 import { ProcurementRecordAttributes } from "../models/sequelize/ProcurementRecord.Model";
-import { RecordSearchRequest } from "../server/api_types";
+import { RecordSearchRequest } from "../types/api_types";
 import { ProcurementRecordService } from "../services/ProcurementRecord.Service";
 
 const { Op } = sequelize;

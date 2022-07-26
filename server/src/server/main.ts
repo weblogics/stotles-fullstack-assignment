@@ -1,7 +1,4 @@
 import express from "express";
-import { Sequelize } from "sequelize-typescript";
-import { Buyer } from "../models/sequelize/Buyer.Model";
-import { ProcurementRecord } from "../models/sequelize/ProcurementRecord.Model";
 import routes from "../routes";
 import dbInit from "../db/init";
 

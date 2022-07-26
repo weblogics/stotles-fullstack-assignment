@@ -64,7 +64,7 @@ function RecordSearchFilters(props: Props) {
         mode="tags"
         size="middle"
         placeholder="Please select"
-        defaultValue={filters.buyerIds}
+        value={filters.buyerIds}
         onChange={handleBuyerChange}
         style={{ width: "100%" }}
       >

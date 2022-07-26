@@ -1,4 +1,4 @@
-import { ProcurementRecordDto } from "../server/api_types";
+import { ProcurementRecordDto } from "../types/api_types";
 import { ProcurementRecord } from "../models/sequelize/ProcurementRecord.Model";
 import { uniqueArray } from "../utils/uniqueArray";
 import { Buyer } from "../models";
