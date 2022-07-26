@@ -22,7 +22,6 @@ class ProcurementRecordsController {
     const requestPayload = req.body as RecordSearchRequest;
 
     try {
-      console.log("body", requestPayload);
       const filters: GetRecordsFilters = {};
 
       if (requestPayload.textSearch) {
